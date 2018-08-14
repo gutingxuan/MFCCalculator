@@ -1,0 +1,236 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\calculator2.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\calculator2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 calculator2"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "calculator2 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2017",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CALCULATOR2_DIALOG DIALOGEX 0, 0, 404, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "calculator2"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT1,55,33,264,27,ES_AUTOHSCROLL
+    CONTROL         "角度",IDC_DEGREE,"Button",BS_AUTORADIOBUTTON,56,60,42,
+                    23
+    CONTROL         "弧度",IDC_RAD,"Button",BS_AUTORADIOBUTTON,102,60,40,23
+    PUSHBUTTON      "1",IDC_1,55,83,34,25
+    PUSHBUTTON      "2",IDC_2,99,83,34,25
+    PUSHBUTTON      "3",IDC_3,143,83,34,25
+    PUSHBUTTON      "+",IDC_ADD,201,83,34,25
+    PUSHBUTTON      "(",IDC_LEFT,247,117,34,25
+    PUSHBUTTON      ")",IDC_RIGHT,293,117,34,25
+    PUSHBUTTON      "4",IDC_4,55,117,34,25
+    PUSHBUTTON      "5",IDC_5,99,117,34,25
+    PUSHBUTTON      "6",IDC_6,143,117,34,25
+    PUSHBUTTON      "-",IDC_MINUS,247,83,34,25
+    PUSHBUTTON      "AC",IDC_CE,201,117,34,25
+    PUSHBUTTON      "7",IDC_7,55,149,34,25
+    PUSHBUTTON      "8",IDC_8,99,149,34,25
+    PUSHBUTTON      "9",IDC_9,143,149,34,25
+    PUSHBUTTON      "*",IDC_MULTIPLY,293,83,34,25
+    PUSHBUTTON      "sin",IDC_SIN,201,149,34,25
+    PUSHBUTTON      "cos",IDC_COS,247,149,34,25
+    PUSHBUTTON      "0",IDC_0,55,185,34,25
+    PUSHBUTTON      ".",IDC_DOT,99,185,34,25
+    PUSHBUTTON      "backspace",IDC_BACKSPACE,136,217,42,25
+    PUSHBUTTON      "/",IDC_DIVIDE,337,83,34,25
+    PUSHBUTTON      "arcsin",IDC_SINH,293,149,34,25
+    PUSHBUTTON      "arccos",IDC_COSH,337,149,34,25
+    PUSHBUTTON      "x^y",IDC_INDEX,201,185,34,25
+    PUSHBUTTON      "ln",IDC_LN,293,185,34,25
+    PUSHBUTTON      "n!",IDC_FACTORIAL,337,117,34,25
+    PUSHBUTTON      "√x",IDC_SQRT,247,185,34,25
+    PUSHBUTTON      "π",IDC_PIE,143,185,34,25
+    PUSHBUTTON      "=",IDC_EQUAL,55,217,71,25
+    PUSHBUTTON      "log",IDC_LOG,337,185,34,25
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "calculator2 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "calculator2\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2017\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "calculator2.EXE\0"
+            VALUE "ProductName", "calculator2 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CALCULATOR2_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 397
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 292
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 calculator2(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\calculator2.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
